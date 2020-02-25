@@ -10904,3 +10904,24 @@ a.text-dark:focus {
   padding-left: 30px;
 }
 
+/*User gravatar*/
+
+section.user_info {
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+section.user_info .gravatar {
+  float: none;
+  max-width: 70px;
+}
+
+section.user_info h1 {
+  font-size: 1.4em;
+  letter-spacing: -1px;
+}
+
+.gravatar {
+  float: left;
+}
+
