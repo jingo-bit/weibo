@@ -16,7 +16,7 @@
           </a>
         </div>
 
-        <form action="{{ route('users.update',$user->id) }}">
+        <form action="{{ route('users.update',$user->id) }}" method="POST">
           {{ method_field('PATCH') }}
           {{ csrf_field() }}
 

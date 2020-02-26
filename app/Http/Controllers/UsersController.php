@@ -65,6 +65,7 @@ class UsersController extends Controller
             'password' => 'nullable|confirmed|min:6'
         ]);
         $data = [];
+        $data['name'] = $request->name;
         if ($request->password){
             $data['password'] = bcrypt($request->password);
         }
