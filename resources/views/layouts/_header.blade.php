@@ -15,11 +15,11 @@
             <a href="#" class="dropdown-item">编辑资料</a>
             <div class="dropdown-item">
               <a href="#" id="logout" class="dropdown-item">
-                <form action="{{ route('logout') }}">
+                <form action="{{ route('logout') }}" method="POST">
                   {{ csrf_field() }}
                   {{ method_field('DELETE') }}
 
-                  <button class="btn btn-block btn-danger" type="button" name="button">退出</button>
+                  <button class="btn btn-block btn-danger" type="submit" name="button">退出</button>
 
                 </form>
               </a>
@@ -29,7 +29,7 @@
       @else
 
         <li class="nav-item"><a href="{{ route('help') }}" class="nav-link">帮助</a></li>
-        <li class="nav-item"><a href="{{route('login')}}">登陆</a></li>
+        <li class="nav-item"><a href="{{route('login')}} " class="nav-link">登陆</a></li>
 
       @endif
     </ul>
