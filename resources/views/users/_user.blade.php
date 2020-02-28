@@ -1,6 +1,6 @@
 <div class="list-group-item">
   <img src="{{ $user->gravatar() }}" alt="{{ $user->name }}" width="32">
-  <a href="{{ route('users.show','$user') }}">
+  <a href="{{ route('users.show',$user) }}">
     {{ $user->name }}
   </a>
   @can('destroy',$user)
